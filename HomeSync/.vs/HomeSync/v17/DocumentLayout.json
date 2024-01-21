@@ -1,0 +1,584 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\device\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\device\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\models\\viewcharge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:models\\viewcharge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\models\\iddd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:models\\iddd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\room\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\room\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\viewcharge\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\viewcharge\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\room\\whatever.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\room\\whatever.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\viewchargecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\viewchargecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\finance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\finance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\data\\dbcontextapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:data\\dbcontextapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\models\\events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:models\\events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\communicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\communicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\financecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\financecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\communication\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\communication\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\models\\communication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:models\\communication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\users\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\users\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\communication\\filtered.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\communication\\filtered.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\room\\index4.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\room\\index4.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\room\\index3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\room\\index3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|c:\\users\\abdalrahman\\downloads\\homesync (2)\\homesync\\views\\room\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{503F2DCF-BD91-42A5-B629-29806984B628}|HomeSync.csproj|solutionrelative:views\\room\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAADQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T11:57:17.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index1.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Room\\Index1.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index1.cshtml",
+              "RelativeToolTip": "Views\\Room\\Index1.cshtml",
+              "ViewState": "AQIAALQAAAAAAAAAAAAAAMQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "whatever.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\whatever.cshtml",
+              "RelativeDocumentMoniker": "Views\\Room\\whatever.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\whatever.cshtml",
+              "RelativeToolTip": "Views\\Room\\whatever.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T16:48:44.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeviceController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\DeviceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DeviceController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\DeviceController.cs",
+              "RelativeToolTip": "Controllers\\DeviceController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAACcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T13:33:31.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index1.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\ViewCharge\\Index1.cshtml",
+              "RelativeDocumentMoniker": "Views\\ViewCharge\\Index1.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\ViewCharge\\Index1.cshtml",
+              "RelativeToolTip": "Views\\ViewCharge\\Index1.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T18:26:36.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewCharge.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\ViewCharge.cs",
+              "RelativeDocumentMoniker": "Models\\ViewCharge.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\ViewCharge.cs",
+              "RelativeToolTip": "Models\\ViewCharge.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T18:10:38.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\Device.cs",
+              "RelativeDocumentMoniker": "Models\\Device.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\Device.cs",
+              "RelativeToolTip": "Models\\Device.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T13:31:51.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Device\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Device\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Device\\Index.cshtml",
+              "RelativeToolTip": "Views\\Device\\Index.cshtml",
+              "ViewState": "AQIAAPwAAAAAAAAAAAAAAAsBAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T13:34:36.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Room\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index.cshtml",
+              "RelativeToolTip": "Views\\Room\\Index.cshtml",
+              "ViewState": "AQIAALEAAAAAAAAAAAAAALsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Iddd.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\Iddd.cs",
+              "RelativeDocumentMoniker": "Models\\Iddd.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\Iddd.cs",
+              "RelativeToolTip": "Models\\Iddd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T19:26:32.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "Controllers\\EventsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T18:04:53.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Events\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Events\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Events\\Index.cshtml",
+              "RelativeToolTip": "Views\\Events\\Index.cshtml",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAAAGkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T19:03:44.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Events.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Events.cs",
+              "RelativeDocumentMoniker": "Views\\Events.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Events.cs",
+              "RelativeToolTip": "Views\\Events.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T19:04:44.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAwwD0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ViewChargeController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\ViewChargeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ViewChargeController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\ViewChargeController.cs",
+              "RelativeToolTip": "Controllers\\ViewChargeController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAACMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T18:42:05.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Finance\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Finance\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Finance\\Index.cshtml",
+              "RelativeToolTip": "Views\\Finance\\Index.cshtml",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAAAN0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DbContextApp.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Data\\DbContextApp.cs",
+              "RelativeDocumentMoniker": "Data\\DbContextApp.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Data\\DbContextApp.cs",
+              "RelativeToolTip": "Data\\DbContextApp.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA1wCQAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T11:57:17.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Events.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\Events.cs",
+              "RelativeDocumentMoniker": "Models\\Events.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\Events.cs",
+              "RelativeToolTip": "Models\\Events.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T18:06:03.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Task\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Task\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Task\\Index.cshtml",
+              "RelativeToolTip": "Views\\Task\\Index.cshtml",
+              "ViewState": "AQIAADUBAAAAAAAAAAAAALEDAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "Controllers\\TaskController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T16:01:54.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "Controllers\\RoomController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAiwDUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T16:02:12.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CommunicationController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\CommunicationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CommunicationController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\CommunicationController.cs",
+              "RelativeToolTip": "Controllers\\CommunicationController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswCcAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T11:57:17.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FinanceController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\FinanceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FinanceController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\FinanceController.cs",
+              "RelativeToolTip": "Controllers\\FinanceController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T11:57:17.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Communication.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\Communication.cs",
+              "RelativeDocumentMoniker": "Models\\Communication.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Models\\Communication.cs",
+              "RelativeToolTip": "Models\\Communication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T13:31:55.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Communication\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Communication\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Communication\\Index.cshtml",
+              "RelativeToolTip": "Views\\Communication\\Index.cshtml",
+              "ViewState": "AQIAADgBAAAAAAAAAAAAAEcBAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T12:01:38.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-12-16T12:02:59.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index1.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Users\\Index1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Index1.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Users\\Index1.cshtml",
+              "RelativeToolTip": "Views\\Users\\Index1.cshtml",
+              "ViewState": "AQIAAO4AAAAAAAAAAAAswAkBAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-16T12:02:58.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Views\\Users\\Index.cshtml",
+              "ViewState": "AQIAALsAAAAAAAAAAAAkwMgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Filtered.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Communication\\Filtered.cshtml",
+              "RelativeDocumentMoniker": "Views\\Communication\\Filtered.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Communication\\Filtered.cshtml",
+              "RelativeToolTip": "Views\\Communication\\Filtered.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index4.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index4.cshtml",
+              "RelativeDocumentMoniker": "Views\\Room\\Index4.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index4.cshtml",
+              "RelativeToolTip": "Views\\Room\\Index4.cshtml",
+              "ViewState": "AQIAALcAAAAAAAAAAAAAAMYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index3.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index3.cshtml",
+              "RelativeDocumentMoniker": "Views\\Room\\Index3.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index3.cshtml",
+              "RelativeToolTip": "Views\\Room\\Index3.cshtml",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAAAMUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index2.cshtml",
+              "DocumentMoniker": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index2.cshtml",
+              "RelativeDocumentMoniker": "Views\\Room\\Index2.cshtml",
+              "ToolTip": "C:\\Users\\AbdAlrahman\\Downloads\\HomeSync (2)\\HomeSync\\Views\\Room\\Index2.cshtml",
+              "RelativeToolTip": "Views\\Room\\Index2.cshtml",
+              "ViewState": "AQIAALEAAAAAAAAAAAAAAMYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-16T11:57:17.231Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

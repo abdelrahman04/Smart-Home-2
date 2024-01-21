@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ViewCharge>
+
+@*<div style="color: white;">
+	<table class="table" style="color: white;">
+		<thead>
+			<tr>
+				<th>Charge</th>
+				<th>Location</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+
+				<tr>
+					<td>@Html.DisplayFor(modelItem => item.BatteryStatus)</td>
+					<td>@Html.DisplayFor(modelItem => item.Room)</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>*@
+<div class="form">
+	<form asp-action="ViewCharge" method="get">
+		@if(ViewBag.charge != null)
+		{
+			<div style="color: white;">
+				<table class="table" style="color: white;">
+					<thead>
+						<tr>
+							<th>Charge</th>
+							<th>Location</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in ViewBag.charge)
+						{
+
+							<tr>
+								<td>@item.Charge</td>
+								<td>@item.Location</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<label for="DeviceId">DeviceId : </label>
+				<input type="number" required id="DeviceId" name="DeviceId" />
+			</div>
+		}
+		else
+		{
+			<div>null</div>
+		}
+
+
+		<button type="submit">View Charge</button>
+	</form>
+</div>

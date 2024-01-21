@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .centered-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .centered-alert {
+        position: fixed;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear 3s, opacity 3s linear;
+        background-color: palevioletred;
+    }
+
+    .centered-alert.hide {
+        visibility: hidden;
+        opacity:  0;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="~/css/Space.css" />
+</head>
+
+<div class="centered-form">
+    <form style="background-color: black; padding: 20px; border-radius: 15px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); width: 300px;" method="post" action="@Url.Action("LogIn")">
+        <div style="margin-bottom: 10px;">
+            <label for="email" style="color: white;">Email:</label>
+            <input type="text" id="email" name="email" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #1a1a1a; background-color: #1a1a1a;color : white;">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <label for="password" style="color: white;">Password:</label>
+            <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #1a1a1a; background-color: #1a1a1a;color : white;">
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <button class="btn" type="submit" onclick="location.href= '/'">
+                <strong>Log In</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </button>
+
+            <button class="btn" type="button" onclick="location.href= 'Home/register'">
+                <strong>Register</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </button>
+        </div>
+    </form>
+</div>
+@{
+    var alertMessage = TempData["AlertMessage"] as string;
+}
+@if (alertMessage != null)
+{
+    <div class="alert alert-success centered-alert" id="alertMessage">
+        @alertMessage
+    </div>
+}
+<script src="~/js/HideAlert.js"></script>

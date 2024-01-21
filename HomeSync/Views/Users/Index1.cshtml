@@ -1,0 +1,434 @@
+﻿@using Microsoft.AspNetCore.Http
+@model IEnumerable<Users>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="~/css/ViewTasks.css" />
+
+</head>
+    <style>
+
+
+	h1{
+
+	text-align: center;
+	}
+	@* 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+*@
+	th {
+
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	vertical-align: middle;
+	}
+	td{
+
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	vertical-align: middle;
+	}
+	.except{
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+	}
+	tr{
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;	}
+
+	td[colspan="9"] {
+
+	font-size: 4;
+	color: green;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+	/* Title Style */
+	.nine h1 {
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #222;
+	letter-spacing: 1px;
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	}
+
+	.nine h1 span {
+	margin-top: 5px;
+	font-size: 15px;
+	color: #444;
+	word-spacing: 1px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-template-rows: 27px 0;
+	grid-gap: 20px;
+	align-items: center;
+	}
+
+	.nine h1 span:after, .nine h1 span:before {
+	content: " ";
+	display: block;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	height: 5px;
+	background-color: #f8f8f8;
+	}
+
+	/* Shadow */
+
+
+	/Check Box Stlye/
+
+	.checkbox-wrapper-57 input[type="checkbox"] {
+	visibility: hidden;
+	display: none;
+	}
+
+	.checkbox-wrapper-57 *,
+	.checkbox-wrapper-57 ::after,
+	.checkbox-wrapper-57 ::before {
+	box-sizing: border-box;
+	}
+
+	.checkbox-wrapper-57 .container {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	font-size: 25px;
+	user-select: none;
+	}
+
+	/* Create a custom checkbox */
+	.checkbox-wrapper-57 .checkmark {
+
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 1.3em;
+	width: 1.3em;
+	background: black;
+	border-radius: 50px;
+	transition: all 0.7s;
+	--spread: 20px;
+	}
+
+	/* When the checkbox is checked, add a blue background */
+	.checkbox-wrapper-57 .container input:checked ~ .checkmark {
+	background: black;
+	box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkbox-wrapper-57 .checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.checkbox-wrapper-57 .container input:checked ~ .checkmark::after {
+	display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.checkbox-wrapper-57 .container .checkmark::after {
+	left: 0.5em;
+	top: 0.34em;
+	width: 0.25em;
+	height: 0.5em;
+	border: solid #f0f0f0;
+	border-width: 0 0.15em 0.15em 0;
+	transform: rotate(45deg);
+	}
+
+	/* Input Style */
+	.container input {
+	padding: 6px 12px;
+	background: rgb(31, 32, 35);
+	border: 1px solid rgb(60, 63, 68);
+	border-radius: 4px;
+	font-size: 13px;
+	color: rgb(247, 248, 248);
+	height: 46px;
+	appearance: none;
+	transition: border 0.15s ease 0s;
+	: focus
+
+	{
+	outline: none;
+	box-shadow: none;
+	border-color: rgb(100, 153, 255);
+	}
+
+	}
+
+	/* Body */
+	body {
+	background-color: #212124;
+	color: white;
+	margin: 0;
+	padding: 0;
+	}
+
+	.centered-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	}
+
+
+    </style>
+
+	<form asp-controller="Users" asp-action="ViewGuests" method="get" id="myForm">
+
+	@if (ViewBag.res != null)
+	{
+		<table>
+			<thead>
+				<tr class="except">
+
+					<th>User ID </th>
+					<th>First Name </th>
+					<th>Last Name </th>
+					<th> Password </th>
+					<th> Email </th>
+					<th> Preference </th>
+					<th> Room </th>
+					<th> User Type </th>
+					<th> Birthdate </th>
+					<th> Age </th>
+				</tr>
+			</thead>
+			<tbody>
+
+				@foreach (var user in ViewBag.res)
+				{
+
+					<tr>
+
+
+
+						<td> @user.UsersId</td>
+						<td> @user.F_name</td>
+						<td> @user.L_name </td>
+						<td>
+							@user.Password
+						</td>
+						<td> @user.Email </td>
+						<td> @user.Preference </td>
+						<td>
+							@user.room
+						</td>
+						<td> @user.Type </td>
+						<td> @user.BirthDate </td>
+						<td> @user.Age </td>
+
+					</tr>
+
+
+				}
+
+
+			</tbody>
+
+
+		</table>
+	}
+
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<div class="btn-containers">
+		<button type="submit" name="space-buttons" id="space-btns">
+			<span>View Guests</span>
+			<span class="moon"><span class="moon1"></span></span>
+			<span class="planet"></span>
+			<div class="star" style="left: 119.273px;
+		top: 18.0747px;
+		animation-delay: 3.37051s;
+		transform: scale(1.1);"></div>
+			<div class="star" style="left: 22.2022px;
+		top: 10.69534px;
+		animation-delay: 4.9s;
+		transform: scale(2.22);"></div>
+			<div class="star" style="left: 14.754px;
+		top: 25.2924px;
+		animation-delay: 0.05s;
+		transform: scale(0.1);"></div>
+			<div class="star" style="left: 95.948px;
+		top: 54.8942px;
+		animation-delay: 3.1s;
+		transform: scale(1.87);"></div>
+			<div class="star" style="left: 184.622px;
+		top: 20.0923px;
+		animation-delay: 2.8s;
+		transform: scale(1.77);"></div>
+			<div class="star" style="left: 142.1px;
+		top: 22.3542px;
+		animation-delay: 2.73988s;
+		transform: scale(1.62715);"></div>
+			<div class="star" style="left: 145.079px;
+		top: 6.97553px;
+		animation-delay: 0.0408754s;
+		transform: scale(0.468075);"></div>
+			<div class="star" style="left: 42.2308px;
+		top: 9.78383px;
+		animation-delay: 4.58407s;
+		transform: scale(0.0422065);"></div>
+			<div class="star" style="left: 91.2734px;
+		top: 14.0408px;
+		animation-delay: 2.05927s;
+		transform: scale(0.11997);"></div>
+			<div class="star" style="left: 35.6985px;
+		top: 52.6403px;
+		animation-delay: 3.07343s;
+		transform: scale(0.672992);"></div>
+			<div class="star" style="left: 76.4191px;
+		top: 48.453px;
+		animation-delay: 2.35679s;
+		transform: scale(2.001);"></div>
+			<div class="star" style="left: 154.027px;
+		top: 45.9848px;
+		animation-delay: 3.723s;
+		transform: scale(1.4118);"></div>
+			<div class="star" style="left: 110.241px;
+		top: 20.2684px;
+		animation-delay: 2.94906s;
+		transform: scale(1.2193);"></div>
+			<div class="star" style="left: 12.602px;
+		top: 19.8836px;
+		animation-delay: 4.072s;
+		transform: scale(1.49026);"></div>
+			<div class="star" style="left: 30.0911px;
+		top: 37.9746px;
+		animation-delay: 1.02002s;
+		transform: scale(1.41008);"></div>
+			<div class="star" style="left: 62.3096px;
+		top: 9.64604px;
+		animation-delay: 3.9445s;
+		transform: scale(0.231214);"></div>
+			<div class="star" style="left: 44.7189px;
+		top: 32.4307px;
+		animation-delay: 4.78921s;
+		transform: scale(0.359408);"></div>
+			<div class="star" style="left: 191.866px;
+		top: 27.151px;
+		animation-delay: 1.34451s;
+		transform: scale(1.13484);"></div>
+			<div class="star" style="left: 47.6744px;
+		top: 3.00604px;
+		animation-delay: 1.04567s;
+		transform: scale(0.682023);"></div>
+			<div class="star" style="left: 98.6225px;
+		top: 49.6115px;
+		animation-delay: 2.41384s;
+		transform: scale(1.96254);"></div>
+			<div class="star" style="left: 57.4785px;
+		top: 29.6588px;
+		animation-delay: 3.3569s;
+		transform: scale(1.53118);"></div>
+			<div class="star" style="left: 13.2213px;
+		top: 24.538px;
+		animation-delay: 1.69582s;
+		transform: scale(1.6236);"></div>
+			<div class="star" style="left: 56.9067px;
+		top: 51.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="left: 139.8361px;
+		top: 45.3876px;
+		animation-delay: 1.28648s;
+		transform: scale(0.566118);"></div>
+			<div class="star" style="right: 40.9067px;
+		top: 21.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="right: 30.9067px;
+		top: 26.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="right: 30.9067px;
+		top: 16.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="right: 20.9067px;
+		top: 10.904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="right: 40.9067px;
+		top: 8.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="left: 80.9067px;
+		top: 8.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="left: 100.9067px;
+		top: 6.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="left: 130.9067px;
+		top: 8.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(0.749788);"></div>
+			<div class="star" style="right: 80.9067px;
+		top: 5.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(1.9999998);"></div>
+			<div class="star" style="right: 45.9067px;
+		top: 35.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(1.999998);"></div>
+			<div class="star" style="right: 85.9067px;
+		top: 44.9904px;
+		animation-delay: 4.74375s;
+		transform: scale(1.99998998);"></div>
+		</button>
+	</div>
+
+
+</form>
+
+
+    @using (Html.BeginForm("RemoveGuest", "Users", FormMethod.Post))
+{
+    <p>Remove Guest</p>
+    <input type="number" required name="GuestID" placeholder="Guest Id" />
+    <input type="submit" value= "Remove" />
+}
+
+    <div>
+        <p>
+            number of guests: @ViewData["GuestCount"]
+        </p>
+    </div>
+
+    @using (Html.BeginForm("GuestCount", "Users", FormMethod.Post))
+{
+    <p>Set Guest Count</p>
+    <input type="number" required name="count" placeholder="Count" />
+    <input type="submit" value="Update" />
+}
+
+
+
+    @{
+	var alertMessage = TempData["AlertMessage"] as string;
+    }
+    @if (alertMessage != null)
+{
+    <div class="alert alert-success centered-alert" id="alertMessage">
+        @alertMessage
+    </div>
+}
+    <h1> @ViewData["USERID"]</h1>
+    <script src="~/js/HideAlert.js"></script>

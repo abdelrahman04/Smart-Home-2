@@ -1,0 +1,223 @@
+﻿@model IEnumerable<HomeSync.Models.Room>
+@{
+    ViewData["Title"] = "Room";
+}
+
+
+<style>
+
+
+	h1{
+
+	text-align: center;
+	}
+	@* 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+*@
+	th {
+
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	vertical-align: middle;
+	}
+	td{
+
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	vertical-align: middle;
+	}
+	.except{
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+	}
+	tr{
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;	}
+
+	td[colspan="9"] {
+
+	font-size: 4;
+	color: green;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+	/* Title Style */
+	.nine h1 {
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #222;
+	letter-spacing: 1px;
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	}
+
+	.nine h1 span {
+	margin-top: 5px;
+	font-size: 15px;
+	color: #444;
+	word-spacing: 1px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-template-rows: 27px 0;
+	grid-gap: 20px;
+	align-items: center;
+	}
+
+	.nine h1 span:after, .nine h1 span:before {
+	content: " ";
+	display: block;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	height: 5px;
+	background-color: #f8f8f8;
+	}
+
+	/* Shadow */
+
+
+	/*Check Box Stlye*/
+
+	.checkbox-wrapper-57 input[type="checkbox"] {
+	visibility: hidden;
+	display: none;
+	}
+
+	.checkbox-wrapper-57 *,
+	.checkbox-wrapper-57 ::after,
+	.checkbox-wrapper-57 ::before {
+	box-sizing: border-box;
+	}
+
+	.checkbox-wrapper-57 .container {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	font-size: 25px;
+	user-select: none;
+	}
+
+	/* Create a custom checkbox */
+	.checkbox-wrapper-57 .checkmark {
+
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 1.3em;
+	width: 1.3em;
+	background: black;
+	border-radius: 50px;
+	transition: all 0.7s;
+	--spread: 20px;
+	}
+
+	/* When the checkbox is checked, add a blue background */
+	.checkbox-wrapper-57 .container input:checked ~ .checkmark {
+	background: black;
+	box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkbox-wrapper-57 .checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.checkbox-wrapper-57 .container input:checked ~ .checkmark::after {
+	display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.checkbox-wrapper-57 .container .checkmark::after {
+	left: 0.5em;
+	top: 0.34em;
+	width: 0.25em;
+	height: 0.5em;
+	border: solid #f0f0f0;
+	border-width: 0 0.15em 0.15em 0;
+	transform: rotate(45deg);
+	}
+
+	/* Input Style */
+	.container input {
+	padding: 6px 12px;
+	background: rgb(31, 32, 35);
+	border: 1px solid rgb(60, 63, 68);
+	border-radius: 4px;
+	font-size: 13px;
+	color: rgb(247, 248, 248);
+	height: 46px;
+	appearance: none;
+	transition: border 0.15s ease 0s;
+	: focus
+
+	{
+	outline: none;
+	box-shadow: none;
+	border-color: rgb(100, 153, 255);
+	}
+
+	}
+
+	/* Body */
+	body {
+	background-color: #212124;
+	color: white;
+	margin: 0;
+	padding: 0;
+	}
+
+	.centered-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	}
+
+
+</style>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    string type = HttpContextAccessor.HttpContext.Session.GetString("Type");
+}
+@Html.ActionLink("current room", "Index", "Room")
+@Html.ActionLink("set room", "Index1", "Room")
+@if (type =="Admin") {
+	@Html.ActionLink("create schedule", "Index2", "Room")
+	@Html.ActionLink("set status", "Index3", "Room")
+	@Html.ActionLink("view empty", "Index4", "Room")
+}
+<div>
+    <p>Room</p>
+    @foreach (var i in ViewBag.res)
+    {
+        <div>
+            <p>User Id: @ViewData["USERID"]</p>
+            <p>Room Id: @i.room_id</p>
+            <p>Type: @i.type</p>
+            <p>floor: @i.floor</p>
+            <p>status: @i.status</p>
+            
+        </div>
+    }
+</div>
+
+@{
+    var alertMessage = TempData["AlertMessage"] as string;
+}
+@if (alertMessage != null)
+{
+    <div class="alert alert-success centered-alert" id="alertMessage">
+        @alertMessage
+    </div>
+}
+<script src="~/js/HideAlert.js"></script>

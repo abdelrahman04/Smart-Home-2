@@ -1,0 +1,157 @@
+﻿@model IEnumerable<HomeSync.Models.Events>
+@{
+    ViewData["Title"] = "My Events";
+}
+
+<form asp-controller="Events" asp-action="ViewEvent" method="get" id="myForm">
+    <style type="text/css" media="screen">
+        table {
+            border-collapse: collapse;
+            border: 1px solid #000000;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            table td {
+                border: 1px solid #000000;
+            }
+
+        .vertical-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    @if (ViewBag.res != null)
+    {
+        <table>
+            <thead>
+                <tr class="except">
+                    <th style="width: 100px;">User assigned to</th>
+                    <th style="width: 100px;">Event ID</th>
+                    <th style="width: 150px;">Name</th>
+                    <th style="width: 200px;">Description</th>
+                    <th style="width: 100px;">Location</th>
+                    <th style="width: 150px;">Reminder Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var events in Model)
+                {
+                    <tr>
+                        <td> @events.User_assigned_to</td>
+                        <td> @events.EventId</td>
+                        <td> @events.Name </td>
+                        <td> @events.Description </td>
+                        <td> @events.Location </td>
+                        <td> @events.ReminderDate </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="vertical-center">
+            <th>Please choose which user to see and you can input specific event id or leave it as null  </th>
+        </div>
+    }
+
+    <div class="vertical-center">
+        <label for="user_id">User ID:</label>
+        <input type="number" name="user_id" id="user_id" />
+    </div>
+    <div class="vertical-center">
+        <label for="event_id">Event ID:</label>
+        <input type="number" name="event_id" id="event_id" />
+    </div>
+    <div class="vertical-center">
+        <button type="submit">View Events</button>
+    </div>
+</form>
+
+<form asp-controller="Events" asp-action="AssignUser" method="post" id="assignForm">
+    <div class="vertical-center">
+        <label for="assigned_user_id">User ID:</label>
+        <input type="number" name="user_id" id="assigned_user_id" />
+    </div>
+    <div class="vertical-center">
+        <label for="assigned_event_id">Event ID:</label>
+        <input type="number" name="event_id" id="assigned_event_id" />
+    </div>
+    <div class="vertical-center">
+        <button type="submit">Assign User</button>
+    </div>
+</form>
+
+<form asp-controller="Events" asp-action="Uninvited" method="post" id="uninviteForm">
+    <div class="vertical-center">
+        <label for="uninvite_user_id">User ID:</label>
+        <input type="number" name="user_id" id="uninvite_user_id" />
+    </div>
+    <div class="vertical-center">
+        <label for="uninvite_event_id">Event ID:</label>
+        <input type="number" name="event_id" id="uninvite_event_id" />
+    </div>
+    <div class="vertical-center">
+        <button type="submit">Uninvite User</button>
+    </div>
+</form>
+
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    string type = HttpContextAccessor.HttpContext.Session.GetString("Type");
+}
+	@if (type =="Admin")
+{
+    <form asp-controller="Events" asp-action="RemoveEvent" method="post" id="uninviteForm">
+        <div class="vertical-center">
+            <label for="uninvite_user_id">User ID:</label>
+            <input type="number" name="user_id" id="uninvite_user_id" />
+        </div>
+        <div class="vertical-center">
+            <label for="uninvite_event_id">Event ID:</label>
+            <input type="number" name="event_id" id="uninvite_event_id" />
+        </div>
+        <div class="vertical-center">
+            <button type="submit">Admin Remove Event</button>
+        </div>
+    </form>
+}
+
+<form asp-controller="Events" asp-action="CreateEvent" method="post" id="createEventForm">
+    <div class="vertical-center">
+        <label for="create_event_id">Event ID:</label>
+        <input type="number" name="event_id" id="create_event_id" />
+    </div>
+    <div class="vertical-center">
+        <label for="create_user_id">User ID:</label>
+        <input type="number" name="user_id" id="create_user_id" />
+    </div>
+    <div class="vertical-center">
+        <label for="create_name">Name:</label>
+        <input type="text" name="name" id="create_name" />
+    </div>
+    <div class="vertical-center">
+        <label for="create_description">Description:</label>
+        <input type="text" name="description" id="create_description" />
+    </div>
+    <div class="vertical-center">
+        <label for="create_location">Location:</label>
+        <input type="text" name="location" id="create_location" />
+    </div>
+    <div class="vertical-center">
+        <label for="create_reminder_date">Reminder Date:</label>
+        <input type="datetime-local" name="reminder_date" id="create_reminder_date" />
+    </div>
+    <div class="vertical-center">
+        <label for="create_other_user_id">Other User ID:</label>
+        <input type="number" name="other_user_id" id="create_other_user_id" />
+    </div>
+    <div class="vertical-center">
+        <button type="submit">Create Event</button>
+    </div>
+</form>

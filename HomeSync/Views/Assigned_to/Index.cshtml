@@ -1,0 +1,13 @@
+﻿@model IEnumerable<HomeSync.Models.Assigned_to>
+@{
+	ViewBag.Title = "Index";
+}
+
+
+@foreach (var i in Model)
+{
+	@i.AdminId
+	@i.TaskId
+	@i.UsersId
+	<br />
+}

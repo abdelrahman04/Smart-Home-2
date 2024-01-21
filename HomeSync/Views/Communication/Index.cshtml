@@ -1,0 +1,382 @@
+﻿@model IEnumerable<Communication>
+@{
+    ViewData["Title"] = "My Communications";
+}
+
+<style>
+
+
+	h1{
+
+		text-align: center;
+	}
+@* 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+*@
+	th {
+
+		padding-right: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	td{
+
+		padding-right: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.except{
+				box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+	}
+	tr{
+box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;	}
+
+		td[colspan="9"] {
+
+			font-size: 4;
+			color: green;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		/* Title Style */
+	.nine h1 {
+		text-align: center;
+		font-size: 50px;
+		text-transform: uppercase;
+		color: #222;
+		letter-spacing: 1px;
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+	}
+
+		.nine h1 span {
+			margin-top: 5px;
+			font-size: 15px;
+			color: #444;
+			word-spacing: 1px;
+			font-weight: normal;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			font-family: "Raleway", sans-serif;
+			font-weight: 500;
+			display: grid;
+			grid-template-columns: 1fr max-content 1fr;
+			grid-template-rows: 27px 0;
+			grid-gap: 20px;
+			align-items: center;
+		}
+
+			.nine h1 span:after, .nine h1 span:before {
+				content: " ";
+				display: block;
+				border-bottom: 1px solid #ccc;
+				border-top: 1px solid #ccc;
+				height: 5px;
+				background-color: #f8f8f8;
+			}
+
+	/* Shadow */
+
+
+	/*Check Box Stlye*/
+
+	.checkbox-wrapper-57 input[type="checkbox"] {
+		visibility: hidden;
+		display: none;
+	}
+
+	.checkbox-wrapper-57 *,
+	.checkbox-wrapper-57 ::after,
+	.checkbox-wrapper-57 ::before {
+		box-sizing: border-box;
+	}
+
+	.checkbox-wrapper-57 .container {
+		display: block;
+		position: relative;
+		cursor: pointer;
+		font-size: 25px;
+		user-select: none;
+	}
+
+	/* Create a custom checkbox */
+	.checkbox-wrapper-57 .checkmark {
+
+		position: relative;
+		top: 0;
+		left: 0;
+		height: 1.3em;
+		width: 1.3em;
+		background: black;
+		border-radius: 50px;
+		transition: all 0.7s;
+		--spread: 20px;
+	}
+
+	/* When the checkbox is checked, add a blue background */
+	.checkbox-wrapper-57 .container input:checked ~ .checkmark {
+		background: black;
+		box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkbox-wrapper-57 .checkmark::after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.checkbox-wrapper-57 .container input:checked ~ .checkmark::after {
+		display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.checkbox-wrapper-57 .container .checkmark::after {
+		left: 0.5em;
+		top: 0.34em;
+		width: 0.25em;
+		height: 0.5em;
+		border: solid #f0f0f0;
+		border-width: 0 0.15em 0.15em 0;
+		transform: rotate(45deg);
+	}
+
+	/* Input Style */
+	.container input {
+		padding: 6px 12px;
+		background: rgb(31, 32, 35);
+		border: 1px solid rgb(60, 63, 68);
+		border-radius: 4px;
+		font-size: 13px;
+		color: rgb(247, 248, 248);
+		height: 46px;
+		appearance: none;
+		transition: border 0.15s ease 0s;
+		: focus
+
+	{
+		outline: none;
+		box-shadow: none;
+		border-color: rgb(100, 153, 255);
+	}
+
+	}
+
+	/* Body */
+	body {
+		background-color: #212124;
+		color: white;
+		margin: 0;
+		padding: 0;
+	}
+
+	.centered-form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	.centered-alert {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 3s, opacity 3s linear;
+	}
+	.centered-alert.hide{
+	visibility: hidden;
+	opacity: 0;
+	}
+
+
+</style>
+
+<div style="color: white;">
+    <table class="table" style="color: white;">
+        <thead>
+            <tr>
+                <th>MessageId</th>
+                <th>Sender</th>
+                <th>Receiver</th>
+                <th>Content</th>
+                <th>Title</th>
+                <th>Time_Sent</th>
+                <th>Time_Received</th>
+                <th>Time_Read</th>
+            </tr>
+        </thead>
+
+        <tbody>
+			@try
+			{
+				@foreach (var item in Model)
+				{
+					var t = Context.Session.GetInt32("Id");
+					if (item.SenderId != t && item.ReceiverId != t) continue;
+					<tr>
+						<td>@try
+							{
+								@Html.DisplayFor(modelItem => item.MessageId)
+							}
+							catch (Exception e) { }
+						</td>
+						<td>@try
+							{
+								@Html.DisplayFor(modelItem => item.SenderId)
+							}
+							catch (Exception e) { }
+						</td>
+						<td>@try
+							{
+								@Html.DisplayFor(modelItem => item.ReceiverId)
+							}
+							catch (Exception e) { }
+						</td>
+						<td>@try
+							{
+								@Html.DisplayFor(modelItem => item.Content)
+							}
+							catch (Exception e) { }
+						</td>
+						<td>@try
+							{
+								@Html.DisplayFor(modelItem => item.Title)
+							}
+							catch (Exception e) { }
+						</td>
+						<td>@try
+							{
+								@Html.DisplayFor(modelItem => item.Time_Sent)
+							}
+							catch (Exception e) { }
+						</td>
+						<td>@try
+							{
+								@Html.DisplayFor(modelItem => item.Time_Received)
+							}
+							catch (Exception e) { }
+						</td>
+						<td>@try
+							{
+								@Html.DisplayFor(modelItem => item.Time_Read)
+							}
+							catch (Exception e) { }
+						</td>
+
+					</tr>
+				}
+			}
+			catch (Exception e) { } 
+		</tbody>
+    </table>
+
+</div>
+
+					<style>
+     .forms-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form {
+        width: 48%; /* Adjust the width as needed */
+    }
+
+    div {
+        margin-bottom: 10px; /* Add margin between the divs */
+    }
+
+    button {
+        display: block; /* Make the button a block element */
+        margin-top: 10px; /* Add margin at the top of the button */
+        padding: 10px; /* Add padding to the button */
+        background-color: #4CAF50; /* Set background color */
+        color: white; /* Set text color */
+        border: none; /* Remove border */
+        border-radius: 4px; /* Add border-radius for rounded corners */
+        cursor: pointer; /* Add a pointer cursor on hover */
+    }
+	label {
+        display: inline-block; /* Make labels behave like block elements */
+        width: 120px; /* Set a fixed width for the labels */
+    }
+
+    button:hover {
+        background-color: #45a049; /* Change background color on hover */
+    }
+</style>
+
+<div class="forms-container">
+	<div class = "form">
+<form asp-action="Index" method="post">
+    
+	<div>
+        <label for="receiverId">ReceiverID :    </label>
+        <input type = "number" required id = "receiverId" name="receiverId"/>
+    </div>
+
+	<div>
+        <label for="title">Title : </label>
+        <input type = "text" required id = "title" name="title"/>
+    </div>
+
+	<div>
+        <label for="content">Content : </label>
+        <input type = "text" required id = "content" name="content"/>
+    </div>
+
+	<div>
+        <label for="timeSent">Time Sent : </label>
+        <input type = "time" required id = "timeSent" name="timeSent"/>
+    </div>
+
+	<div>
+        <label for="timeReceived">Time Received : </label>
+        <input type = "time" required id = "timeReceived" name="timeReceived"/>
+    </div>
+
+    <button type="submit">Send</button>
+</form>
+</div>
+
+<div class = "form">
+<form asp-action ="Filtered" method="get">
+    <div>
+        <label for="senderId">Sender ID : </label>
+        <input type = "number" required id = "senderId" name="senderId"/>
+    </div>
+
+    <button type="submit">Show Messages</button>
+</form>
+</div>
+
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    string type = HttpContextAccessor.HttpContext.Session.GetString("Type");
+}
+@if (type =="Admin") {
+	<div class = "form">
+<form asp-action ="DeleteLast" method="post">
+    <button type="submit">Delete Last Message</button>
+</form>
+</div>
+}
+
+</div>
+@{
+		var alertMessage = TempData["AlertMessage"] as string;
+	}
+	@if (alertMessage != null) {
+		<div class="alert alert-success centered-alert" id="alertMessage">
+			@alertMessage
+		</div>
+	}
+	<script src="~/js/HideAlert.js"></script>
